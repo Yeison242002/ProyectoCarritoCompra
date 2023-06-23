@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="499.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="controlador.EditarPerfilController">
+   <children>
+      <Label layoutX="182.0" layoutY="26.0" text="LOGO">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="121.0" text="Nombre:" />
+      <Label layoutX="92.0" layoutY="175.0" text="Telefono o Gmail:" />
+      <Label layoutX="92.0" layoutY="226.0" text="Direccion:" />
+      <Label layoutX="283.0" layoutY="226.0" text="Ciudad/pais:" />
+      <Label layoutX="92.0" layoutY="278.0" text="Actualizar Contraseña:" />
+      <Label layoutX="92.0" layoutY="336.0" text="Confirmar Contraseña:" />
+      <Button fx:id="canclD" layoutX="140.0" layoutY="420.0" mnemonicParsing="false" onAction="#cancelarD" text="CANCELAR" />
+      <Button fx:id="regsD" layoutX="275.0" layoutY="420.0" mnemonicParsing="false" onAction="#registrarseD" text="ACTUALIZAR" />
+      <TextField fx:id="nomD" layoutX="92.0" layoutY="139.0" onAction="#nombreD" prefHeight="25.0" prefWidth="214.0" />
+      <TextField fx:id="telD" layoutX="92.0" layoutY="192.0" onAction="#telefonoD" prefHeight="25.0" prefWidth="214.0" />
+      <TextField fx:id="diccD" layoutX="92.0" layoutY="242.0" onAction="#direccionD" prefHeight="25.0" prefWidth="136.0" />
+      <TextField fx:id="ciuD" layoutX="283.0" layoutY="242.0" onAction="#ciudadD" prefHeight="25.0" prefWidth="136.0" />
+      <TextField fx:id="contD" layoutX="92.0" layoutY="294.0" onAction="#contrasenaD" prefHeight="25.0" prefWidth="214.0" />
+      <TextField fx:id="confD" layoutX="92.0" layoutY="353.0" onAction="#confContrasenaD" prefHeight="25.0" prefWidth="214.0" />
+   </children>
+</AnchorPane>

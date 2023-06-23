@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="499.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="controlador.PrincipalVisual3Controller">
+   <children>
+      <Label layoutX="174.0" text="LOGO">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Label>
+      <Button fx:id="cam" layoutX="57.0" layoutY="186.0" mnemonicParsing="false" onAction="#camisetas" text="CAMISETAS" />
+      <Circle fill="#bfcdda" layoutX="96.0" layoutY="136.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="pan" layoutX="206.0" layoutY="186.0" mnemonicParsing="false" onAction="#pantalones" text="PANTALONES" />
+      <Circle fill="#bfcdda" layoutX="250.0" layoutY="136.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="cal" layoutX="369.0" layoutY="186.0" mnemonicParsing="false" onAction="#calzado" text="CALZADO" />
+      <Circle fill="#bfcdda" layoutX="403.0" layoutY="136.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="ves" layoutX="61.0" layoutY="314.0" mnemonicParsing="false" onAction="#vestidos" text="VESTIDOS" />
+      <Circle fill="#bfcdda" layoutX="97.0" layoutY="264.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="acc" layoutX="208.0" layoutY="314.0" mnemonicParsing="false" onAction="#accesorios" text="ACCESORIOS" />
+      <Circle fill="#bfcdda" layoutX="251.0" layoutY="264.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="des" layoutX="358.0" layoutY="314.0" mnemonicParsing="false" onAction="#descuentos" text="DESCUENTOS" />
+      <Circle fill="#bfcdda" layoutX="404.0" layoutY="264.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="nue" layoutX="218.0" layoutY="440.0" mnemonicParsing="false" onAction="#nuevos" text="NUEVOS" />
+      <Circle fill="#bfcdda" layoutX="250.0" layoutY="391.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
