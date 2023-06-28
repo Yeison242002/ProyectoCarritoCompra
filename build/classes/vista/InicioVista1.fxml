@@ -388,6 +388,41 @@
                         <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
                      </children>
                   </Pane>
+                  <Pane layoutX="175.0" layoutY="8.0" prefHeight="244.0" prefWidth="141.0">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/camiseta%201.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
+                     </children>
+                  </Pane>
                </children></Pane>
          </children>
       </AnchorPane>

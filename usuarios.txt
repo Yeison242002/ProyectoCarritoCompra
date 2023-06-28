@@ -1,0 +1,17 @@
+
+Nombre: yeison
+Ciudad: asdasd
+País: asdasd
+Teléfono:1234567890
+Correo: usuario@yxxs.com
+Dirección: qwsds
+Contraseña: 1234567M?
+--------------------
+Nombre: etert
+Ciudad: ghfg
+País: fgh
+Teléfono: 1234567890
+Correo: usu@yxxs.com
+Dirección: fghfh
+Contraseña: 1234567M?
+--------------------

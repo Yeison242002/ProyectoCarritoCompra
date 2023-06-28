@@ -160,4 +160,5 @@ public class InicioVista1Controller implements Initializable {
    private void clickpanel (ActionEvent event){
        
    }
+   
 }
