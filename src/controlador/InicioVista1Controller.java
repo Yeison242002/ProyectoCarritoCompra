@@ -57,6 +57,8 @@ public class InicioVista1Controller implements Initializable {
     private Button usu;
     @FXML
     private ImageView Busuario;
+    @FXML
+    private Pane PnlG1;
 
     /**
      * Initializes the controller class.
@@ -160,5 +162,9 @@ public class InicioVista1Controller implements Initializable {
    private void clickpanel (ActionEvent event){
        
    }
+
+    @FXML
+    private void clickboton(ActionEvent event) {
+    }
    
 }

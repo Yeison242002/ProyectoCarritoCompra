@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -10,16 +11,16 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioVista1Controller">
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioVista1Controller">
    <children>
-      <AnchorPane prefHeight="430.0" prefWidth="209.0" style="-fx-background-color: #98B6B9;">
+      <AnchorPane prefHeight="560.0" prefWidth="209.0" style="-fx-background-color: #98B6B9;">
          <children>
-            <AnchorPane prefHeight="430.0" prefWidth="40.0" style="-fx-background-color: #1F3A3D;">
+            <AnchorPane prefHeight="560.0" prefWidth="40.0" style="-fx-background-color: #1F3A3D;">
                <effect>
                   <DropShadow />
                </effect>
             </AnchorPane>
-            <Button fx:id="BotonC" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutY="124.0" mnemonicParsing="false" onAction="#pantClick" prefHeight="46.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="PANTALONES">
+            <Button fx:id="BotonC" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutY="80.0" mnemonicParsing="false" onAction="#pantClick" prefHeight="46.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="PANTALONES">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -27,7 +28,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="BotonE" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="-2.0" layoutY="215.0" mnemonicParsing="false" onAction="#vestidoClick" prefHeight="46.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="VESTIDOS">
+            <Button fx:id="BotonE" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="-2.0" layoutY="171.0" mnemonicParsing="false" onAction="#vestidoClick" prefHeight="46.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="VESTIDOS">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -35,7 +36,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="BotonD" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutY="170.0" mnemonicParsing="false" onAction="#calzClick" prefHeight="46.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="CALZADO">
+            <Button fx:id="BotonD" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutY="126.0" mnemonicParsing="false" onAction="#calzClick" prefHeight="46.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="CALZADO">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -43,7 +44,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="BotonF" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="-2.0" layoutY="261.0" mnemonicParsing="false" onAction="#accClick" prefHeight="46.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="ACCESORIOS">
+            <Button fx:id="BotonF" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="-2.0" layoutY="217.0" mnemonicParsing="false" onAction="#accClick" prefHeight="46.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="ACCESORIOS">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -51,7 +52,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="BotonB" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutY="78.0" mnemonicParsing="false" onAction="#camisetasClick" prefHeight="46.0" prefWidth="148.0" style="-fx-background-color: transparent;" text="CAMISETAS">
+            <Button fx:id="BotonB" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutY="34.0" mnemonicParsing="false" onAction="#camisetasClick" prefHeight="46.0" prefWidth="148.0" style="-fx-background-color: transparent;" text="CAMISETAS">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -59,7 +60,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="BotonG" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="3.0" layoutY="307.0" mnemonicParsing="false" onAction="#descuentoClick" prefHeight="46.0" prefWidth="167.0" style="-fx-background-color: transparent;" text="EN DESCUENTO">
+            <Button fx:id="BotonG" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="3.0" layoutY="263.0" mnemonicParsing="false" onAction="#descuentoClick" prefHeight="46.0" prefWidth="167.0" style="-fx-background-color: transparent;" text="EN DESCUENTO">
                <graphic>
                   <ImageView fitHeight="33.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -67,7 +68,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="BotonH" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="-2.0" layoutY="353.0" mnemonicParsing="false" onAction="#nuevoclick" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: transparent;" text="NUEVO">
+            <Button fx:id="BotonH" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="-2.0" layoutY="309.0" mnemonicParsing="false" onAction="#nuevoclick" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: transparent;" text="NUEVO">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -102,11 +103,11 @@
             <DropShadow />
          </effect>
       </AnchorPane>
-      <AnchorPane layoutX="209.0" layoutY="-1.0" prefHeight="430.0" prefWidth="369.0">
+      <AnchorPane layoutX="209.0" layoutY="-1.0" prefHeight="560.0" prefWidth="720.0">
          <children>
-            <Pane fx:id="PnlA" layoutY="34.0" prefHeight="397.0" prefWidth="491.0" style="-fx-background-color: #33FF86;" />
+            <Pane fx:id="PnlA" layoutY="34.0" prefHeight="526.0" prefWidth="720.0" style="-fx-background-color: #33FF86;" />
             <TextField layoutX="170.0" layoutY="4.0" style="-fx-background-color: #ADD8E6; -fx-background-radius: 2cm;" />
-            <Button fx:id="BotonA" alignment="BASELINE_LEFT" graphicTextGap="0.0" layoutX="437.0" layoutY="1.0" minWidth="40.0" mnemonicParsing="false" onAction="#Carritoclick" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: transparent;" text="CARRITO" textAlignment="RIGHT" textFill="#106148">
+            <Button fx:id="BotonA" alignment="BASELINE_LEFT" graphicTextGap="0.0" layoutX="665.0" layoutY="1.0" minWidth="40.0" mnemonicParsing="false" onAction="#Carritoclick" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: transparent;" text="CARRITO" textAlignment="RIGHT" textFill="#106148">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -116,26 +117,26 @@
                </graphic>
             </Button>
             <Button layoutX="332.0" layoutY="3.0" mnemonicParsing="false" text="Buscar" />
-            <Pane fx:id="Pnlc" layoutY="34.0" prefHeight="397.0" prefWidth="491.0" style="-fx-background-color: FFF;">
+            <Pane fx:id="Pnlc" layoutY="34.0" prefHeight="526.0" prefWidth="720.0" style="-fx-background-color: #bffcf2;">
                <children>
-                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0">
+                  <Pane layoutX="14.0" layoutY="10.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
                      <children>
                         <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@imagenes/pantalon%201(1).jpg" />
                            </image>
                         </ImageView>
-                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="200.000$" textFill="RED">
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
                            <font>
                               <Font name="Arial Black" size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="19.0" layoutY="216.0" text="Wonder Clasicos" textAlignment="CENTER">
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="7.0" layoutY="200.0" text="70(vendidos)">
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
                            <font>
                               <Font size="11.0" />
                            </font>
@@ -145,23 +146,22 @@
                               <Font name="Berlin Sans FB" size="59.0" />
                            </font>
                         </Label>
-                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: TRANSPARENT;" text="5" textFill="#fbff00">
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
+                        <Button fx:id="Bph1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
                      </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Pane>
-               </children>
-            </Pane>
-            <Pane fx:id="PnlB" layoutY="34.0" prefHeight="397.0" prefWidth="491.0" style="-fx-background-color: FFF;">
-               <children>
-                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0">
+                  <Pane layoutX="14.0" layoutY="268.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
                      <children>
                         <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@imagenes/camiseta%201.jpg" />
+                              <Image url="@imagenes/pantalon%20mujer2(1).jpg" />
                            </image>
                         </ImageView>
                         <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
@@ -189,31 +189,148 @@
                               <Font name="Arial Rounded MT Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
+                        <Button fx:id="Bpm2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
                      </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Pane>
-                  <Button layoutX="89.0" layoutY="12.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #ff0000; -fx-background-radius: 1CM;" text="NUEVO" textAlignment="CENTER">
-                     <font>
-                        <Font size="50.0" />
-                     </font>
-                  </Button>
+                  <Pane layoutX="565.0" layoutY="10.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/pantalon%20mujer1(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bpm1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="384.0" layoutY="10.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/pantalon%203(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bph3" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="198.0" layoutY="10.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/pantalon%202(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bph2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
                </children>
             </Pane>
-            <Pane fx:id="PnlD" layoutY="34.0" prefHeight="397.0" prefWidth="491.0" style="-fx-background-color: FFF;">
+            <Pane fx:id="PnlF" layoutY="34.0" prefHeight="526.0" prefWidth="720.0" style="-fx-background-color: #bffcf2;">
                <children>
-                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0">
+                  <Pane layoutX="190.0" layoutY="268.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
                      <children>
-                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="199.000$" textFill="RED">
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/a5g.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
                            <font>
                               <Font name="Arial Black" size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="19.0" layoutY="216.0" text="HGL Brow" textAlignment="CENTER">
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="7.0" layoutY="200.0" text="80(vendidos)">
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
                            <font>
                               <Font size="11.0" />
                            </font>
@@ -223,41 +340,35 @@
                               <Font name="Berlin Sans FB" size="59.0" />
                            </font>
                         </Label>
-                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: TRANSPARENT;" text="4.8" textFill="#fbff00">
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
-                        <ImageView fitHeight="110.0" fitWidth="135.0" layoutX="3.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@imagenes/calzado%201(1).jpg" />
-                           </image>
-                        </ImageView>
+                        <Button fx:id="Bmd1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
                      </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Pane>
-               </children></Pane>
-            <Pane fx:id="PnlE" layoutY="34.0" prefHeight="397.0" prefWidth="491.0" style="-fx-background-color: FFF;">
-               <children>
-                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0">
+                  <Pane layoutX="14.0" layoutY="268.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
-                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="20.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@imagenes/v44.jpg" />
+                              <Image url="@imagenes/a4.jpg" />
                            </image>
                         </ImageView>
-                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="200.000$" textFill="RED">
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
                            <font>
                               <Font name="Arial Black" size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="39.0" layoutY="220.0" text="Floral -25">
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="7.0" layoutY="200.0" text="70(vendidos)">
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
                            <font>
                               <Font size="11.0" />
                            </font>
@@ -267,35 +378,35 @@
                               <Font name="Berlin Sans FB" size="59.0" />
                            </font>
                         </Label>
-                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="5" textFill="#fbff00">
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="20.0" />
                            </font>
                         </Label>
+                        <Button fx:id="Bgo1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
                      </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Pane>
-               </children></Pane>
-            <Pane fx:id="PnlF" layoutY="34.0" prefHeight="397.0" prefWidth="491.0" style="-fx-background-color: FFF;">
-               <children>
-                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0">
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
-                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="19.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@imagenes/accesorio%201(1).jpg" />
                            </image>
                         </ImageView>
-                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="99.000$" textFill="RED">
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
                            <font>
                               <Font name="Arial Black" size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="32.0" layoutY="222.0" text="Soul Break" textAlignment="CENTER">
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="7.0" layoutY="200.0" text="60(vendidos)">
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
                            <font>
                               <Font size="11.0" />
                            </font>
@@ -305,35 +416,35 @@
                               <Font name="Berlin Sans FB" size="59.0" />
                            </font>
                         </Label>
-                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: TRANSPARENT;" text="4" textFill="#fbff00">
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="20.0" />
                            </font>
                         </Label>
+                        <Button fx:id="Bg1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
                      </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Pane>
-               </children></Pane>
-            <Pane fx:id="PnlG" layoutY="34.0" prefHeight="397.0" prefWidth="491.0" style="-fx-background-color: FFF;">
-               <children>
-                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0">
+                  <Pane layoutX="190.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
-                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="18.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@imagenes/a3.jpg" />
+                              <Image url="@imagenes/a1.jpg" />
                            </image>
                         </ImageView>
-                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="300.000$" textFill="RED">
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
                            <font>
                               <Font name="Arial Black" size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="19.0" layoutY="216.0" text="Herm Browm" textAlignment="CENTER">
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="7.0" layoutY="200.0" text="80(vendidos)">
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
                            <font>
                               <Font size="11.0" />
                            </font>
@@ -343,17 +454,252 @@
                               <Font name="Berlin Sans FB" size="59.0" />
                            </font>
                         </Label>
-                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: TRANSPARENT;" text="5" textFill="#fbff00">
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="20.0" />
                            </font>
                         </Label>
+                        <Button fx:id="Bg2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
                      </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="377.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/a2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bb1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="565.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/a3_1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bb2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Pane>
                </children></Pane>
-            <Pane fx:id="PnlH" layoutY="34.0" prefHeight="397.0" prefWidth="491.0" style="-fx-background-color: FFF;">
+            <Pane fx:id="PnlE" layoutY="34.0" prefHeight="526.0" prefWidth="720.0" style="-fx-background-color: #bffcf2;">
                <children>
-                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0">
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/v1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="201.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/v2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="387.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/v44.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="565.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/v5.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+               </children></Pane>
+            <Pane fx:id="PnlB" layoutY="34.0" prefHeight="526.0" prefWidth="720.0" style="-fx-background-color: #bffcf2;">
+               <children>
+                  <Pane layoutX="14.0" layoutY="10.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
                      <children>
                         <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -385,10 +731,321 @@
                               <Font name="Arial Rounded MT Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
+                        <Button fx:id="Bsh1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
                      </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Pane>
-                  <Pane layoutX="175.0" layoutY="8.0" prefHeight="244.0" prefWidth="141.0">
+                  <Pane layoutX="14.0" layoutY="268.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/camisetaa%20mujer%201(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bsm1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="198.0" layoutY="10.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/camiseta%202.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bsh2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="384.0" layoutY="10.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/camiseta%203.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bsh3" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="565.0" layoutY="10.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/camiseta%204.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bsh4" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="198.0" layoutY="268.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/camiseta%20mujer2(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bsm2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="384.0" layoutY="268.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/camiseta%20mujer%203(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bsm3" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="PnlH" layoutY="34.0" prefHeight="526.0" prefWidth="720.0" style="-fx-background-color: #bffcf2;">
+               <children>
+                  <Pane layoutX="384.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/v2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bv2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="198.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/accesorio%201(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bg1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
                      <children>
                         <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -420,8 +1077,516 @@
                               <Font name="Arial Rounded MT Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Button mnemonicParsing="false" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="." textFill="TRANSPARENT" />
+                        <Button fx:id="Bsh1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
                      </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="PnlG1" layoutY="33.0" prefHeight="526.0" prefWidth="730.0" style="-fx-background-color: #bffcf2;">
+               <children>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/v1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bv1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="575.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/v5.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bv4" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="385.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/v44.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bv3" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="198.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/v2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bv2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="PnlD" layoutY="34.0" prefHeight="526.0" prefWidth="720.0" style="-fx-background-color: #bffcf2;">
+               <children>
+                  <Pane layoutX="14.0" layoutY="270.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/calzado%20mujer%202(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bcm2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/calzado%201(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bch1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="201.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/calzado%202(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bch2" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="383.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/calzado%203(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bch3" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="565.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/calzado%20mujer%201(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bcm1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+               </children></Pane>
+            <Pane fx:id="PnlG" layoutY="34.0" prefHeight="526.0" prefWidth="730.0" style="-fx-background-color: #bffcf2;">
+               <children>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/a3_1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bb1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="200.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/a4.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bgo1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="391.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/camiseta%203.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bsh3" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane layoutX="575.0" layoutY="14.0" prefHeight="244.0" prefWidth="141.0" style="-fx-background-color: fff; -fx-background-radius: 4mm;">
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="101.0" layoutX="25.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/calzado%20mujer%201(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="7.0" layoutY="176.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="150.000$" textFill="RED">
+                           <font>
+                              <Font name="Arial Black" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="216.0" text="Tommy Hilfiger">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="200.0" text="57(vendidos)">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="-8.0" prefHeight="46.0" prefWidth="21.0" style="-fx-background-color: transparent;" text="*" textFill="#f1f500">
+                           <font>
+                              <Font name="Berlin Sans FB" size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="5.0" style="-fx-background-color: #ffffff;" text="4" textFill="#fbff00">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Bcm1" mnemonicParsing="false" onAction="#clickboton" prefHeight="243.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-background-radius: 8mm;" text="." textFill="#befaf000" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Pane>
                </children></Pane>
          </children>

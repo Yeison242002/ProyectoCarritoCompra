@@ -151,7 +151,7 @@ public class Vista1Controller implements Initializable {
         }
 
         // Verificar si los datos de inicio de sesión son válidos
-        if (!verificarCredenciales(cCorreo, cContraseña)) {
+        if (verificarCredenciales(cCorreo, cContraseña)) {
             mostrarMensajeError("Error", "Los datos de inicio de sesión son incorrectos.");
             return;
         }
