@@ -2,49 +2,27 @@
 package modelo;
 
 public class Productos {
-    
-    public static class Sueteres extends Productos {
-        public Sueteres(String tipo, String color, double precio, int idProducto, String genero) {
-            super(tipo, color, precio, idProducto, genero);
-        }
-    }
-    
-    public static class Pantalones extends Productos {
-        public Pantalones(String tipo, String color, double precio, int idProducto, String genero) {
-            super(tipo, color, precio, idProducto, genero);
-        }
-    }
-    
-    public static class Calzados extends Productos {
-        public Calzados(String tipo, String color, double precio, int idProducto, String genero) {
-            super(tipo, color, precio, idProducto, genero);
-        }
-    }
-    
-    public static class Vestidos extends Productos {
-        public Vestidos(String tipo, String color, double precio, int idProducto, String genero) {
-            super(tipo, color, precio, idProducto, genero);
-        }
-    }
-    
-    public static class Accesorios extends Productos {
-        public Accesorios(String tipo, String color, double precio, int idProducto, String genero) {
-            super(tipo, color, precio, idProducto, genero);
-        }
-    }
-    
+    private String nombre;
     private String tipo;
     private String color;
     private double precio;
     private int idProducto;
     private String genero;
 
-    public Productos(String tipo, String color, double precio, int idProducto, String genero) {
+    public Productos(String nombre, String tipo, String color, double precio, int idProducto, String genero) {
+        this.nombre = nombre;
         this.tipo = tipo;
         this.color = color;
         this.precio = precio;
         this.idProducto = idProducto;
         this.genero = genero;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getTipo() {
@@ -86,47 +64,83 @@ public class Productos {
     public void setGenero(String genero) {
         this.genero = genero;
     }
+    
+    public static class Sueteres extends Productos {
+        public Sueteres(String nombre, String tipo, String color, double precio, int idProducto, String genero) {
+            super(nombre, tipo, color, precio, idProducto, genero);
+        }
+    }
+    
+    public static class Pantalones extends Productos {
+        public Pantalones(String nombre, String tipo, String color, double precio, int idProducto, String genero) {
+            super(nombre, tipo, color, precio, idProducto, genero);
+        }
+    }
+    
+    public static class Calzados extends Productos {
+        public Calzados(String nombre, String tipo, String color, double precio, int idProducto, String genero) {
+            super(nombre, tipo, color, precio, idProducto, genero);
+        }
+    }
+    
+    public static class Vestidos extends Productos {
+        public Vestidos(String nombre, String tipo, String color, double precio, int idProducto, String genero) {
+            super(nombre, tipo, color, precio, idProducto, genero);
+        }
+    }
+    
+    public static class Accesorios extends Productos {
+        public Accesorios(String nombre, String tipo, String color, double precio, int idProducto, String genero) {
+            super(nombre, tipo, color, precio, idProducto, genero);
+        }
+    }
+    
+    
 
     public static void main(String[] args) {
-        Sueteres sueter1 = new Sueteres("Suéter", "Azul", 39.99, 1, "Unisex");
-        Sueteres sueter2 = new Sueteres("Suéter", "Rojo", 45.99, 2, "Hombre");
-        Sueteres sueter3 = new Sueteres("Suéter", "Verde", 49.99, 3, "Mujer");
-        Sueteres sueter4 = new Sueteres("Suéter", "Gris", 35.99, 4, "Unisex");
-        Sueteres sueter5 = new Sueteres("Suéter", "Negro", 42.99, 5, "Mujer");
+        Sueteres sueter1 = new Sueteres("Tommy Hilfiger", "Suéter", "Negro", 150.000, 1, "Hombre");
+        Sueteres sueter2 = new Sueteres("Tommy Blower", "Suéter", "Azul Marino", 130.000, 2, "Hombre");
+        Sueteres sueter3 = new Sueteres("Sumer Red", "Suéter", "Granate", 50.000, 3, "Hombre");
+        Sueteres sueter4 = new Sueteres("Levi´s Housemarck", "Suéter", "Crema", 200.000, 4, "Hombre");
+        Sueteres sueter5 = new Sueteres("Champion Girl", "Suéter", "Añil", 95.000, 5, "Mujer");
+        Sueteres sueter6 = new Sueteres("Blower M", "Suéter", "Negro, Azul, Gris", 180.000, 6, "Mujer");
+        Sueteres sueter7 = new Sueteres("Dam Glup", "Suéter", "Azul Marino", 200.000, 7, "Mujer");
+       
         
-        Pantalones pantalon1 = new Pantalones("Pantalón", "Azul", 59.99, 1, "Unisex");
-        Pantalones pantalon2 = new Pantalones("Pantalón", "Negro", 65.99, 2, "Hombre");
-        Pantalones pantalon3 = new Pantalones("Pantalón", "Gris", 54.99, 3, "Mujer");
-        Pantalones pantalon4 = new Pantalones("Pantalón", "Beige", 49.99, 4, "Unisex");
-        Pantalones pantalon5 = new Pantalones("Pantalón", "Verde", 57.99, 5, "Hombre");
+        Pantalones pantalon1 = new Pantalones("Wonder Clasicos", "Pantalón", "Gris", 200.000, 8, "Hombre");
+        Pantalones pantalon2 = new Pantalones("Bermuda Blower", "Pantalón", "Aciano oscuro", 170.000, 9, "Hombre");
+        Pantalones pantalon3 = new Pantalones("Mich Jean", "Pantalón", "Gris Azulado", 200.000, 10, "Hombre");
+        Pantalones pantalon4 = new Pantalones("Mich Jean Dama", "Pantalón", "Azul oscuro", 210.000, 11, "Mujer");
+        Pantalones pantalon5 = new Pantalones("Coul Holgado", "Pantalón", "Aciano", 80.000, 12, "Mujer");
         
-        Calzados calzado1 = new Calzados("Calzado", "Negro", 79.99, 1, "Unisex");
-        Calzados calzado2 = new Calzados("Calzado", "Blanco", 84.99, 2, "Mujer");
-        Calzados calzado3 = new Calzados("Calzado", "Marrón", 72.99, 3, "Hombre");
-        Calzados calzado4 = new Calzados("Calzado", "Azul", 67.99, 4, "Unisex");
-        Calzados calzado5 = new Calzados("Calzado", "Gris", 76.99, 5, "Mujer");
+        Calzados calzado1 = new Calzados("HGL Brow", "Calzado", "Gris", 190.000, 13, "Hombre");
+        Calzados calzado2 = new Calzados("Nautica deportivos", "Calzado", "Gris Claro", 300.000, 14, "Hombre");
+        Calzados calzado3 = new Calzados("Brower Clasicos", "Calzado", "Verde Palta", 500.000, 15, "Hombre");
+        Calzados calzado4 = new Calzados("Steve Madden", "Calzado", "Negro", 250.000, 16, "Mujer");
+        Calzados calzado5 = new Calzados("Madden Girl", "Calzado", "Crema", 100.000, 17, "Mujer");
         
-        Vestidos vestido1 = new Vestidos("Vestido", "Rojo", 99.99, 1, "Mujer");
-        Vestidos vestido2 = new Vestidos("Vestido", "Negro", 105.99, 2, "Mujer");
-        Vestidos vestido3 = new Vestidos("Vestido", "Azul", 94.99, 3, "Mujer");
-        Vestidos vestido4 = new Vestidos("Vestido", "Verde", 89.99, 4, "Mujer");
-        Vestidos vestido5 = new Vestidos("Vestido", "Blanco", 97.99, 5, "Mujer");
+        Vestidos vestido1 = new Vestidos("Light Holgado", "Vestido", "Gris", 200.000, 18, "Mujer");
+        Vestidos vestido2 = new Vestidos("Madden Minch", "Vestido", "Negro", 350.000, 19, "Mujer");
+        Vestidos vestido3 = new Vestidos("Floral -25", "Vestido", "Foral", 200.000, 20, "Mujer");
+        Vestidos vestido4 = new Vestidos("Herm Girl", "Vestido", "Blanco", 650.000, 21, "Mujer");
+       
         
-        Accesorios accesorio1 = new Accesorios("Accesorio", "Plateado", 19.99, 1, "Unisex");
-        Accesorios accesorio2 = new Accesorios("Accesorio", "Dorado", 24.99, 2, "Unisex");
-        Accesorios accesorio3 = new Accesorios("Accesorio", "Negro", 21.99, 3, "Unisex");
-        Accesorios accesorio4 = new Accesorios("Accesorio", "Rojo", 16.99, 4, "Unisex");
-        Accesorios accesorio5 = new Accesorios("Accesorio", "Verde", 18.99, 5, "Unisex");
+        Accesorios accesorio1 = new Accesorios("Soul Break", "Accesorio", "Negro", 99.000, 22, "Unisex");
+        Accesorios accesorio2 = new Accesorios("Soul Brom", "Accesorio", "Crema", 160.000, 23, "Unisex");
+        Accesorios accesorio3 = new Accesorios("Madden Lith", "Accesorio", "Negro", 600.000, 24, "Unisex");
+        Accesorios accesorio4 = new Accesorios("Herm Browm", "Accesorio", "Gris Oscuro", 300.000, 25, "Unisex");
+        Accesorios accesorio5 = new Accesorios("Champion Roja", "Accesorio", "Rojo", 100.000, 26, "Unisex");
+        Accesorios accesorio6 = new Accesorios("Calcetines Grices", "Accesorio", "Gris", 50.000, 27, "Unisex");
         
-        System.out.println("Suéter 1 - Tipo: " + sueter1.getTipo() + ", Color: " + sueter1.getColor() + ", Precio: " + sueter1.getPrecio() + ", ID: " + sueter1.getIdProducto() + ", Género: " + sueter1.getGenero());
-        
-        System.out.println("Pantalón 3 - Tipo: " + pantalon3.getTipo() + ", Color: " + pantalon3.getColor() + ", Precio: " + pantalon3.getPrecio() + ", ID: " + pantalon3.getIdProducto() + ", Género: " + pantalon3.getGenero());
-        
-        System.out.println("Calzado 5 - Tipo: " + calzado5.getTipo() + ", Color: " + calzado5.getColor() + ", Precio: " + calzado5.getPrecio() + ", ID: " + calzado5.getIdProducto() + ", Género: " + calzado5.getGenero());
-        
-        System.out.println("Vestido 2 - Tipo: " + vestido2.getTipo() + ", Color: " + vestido2.getColor() + ", Precio: " + vestido2.getPrecio() + ", ID: " + vestido2.getIdProducto() + ", Género: " + vestido2.getGenero());
-        
-        System.out.println("Accesorio 4 - Tipo: " + accesorio4.getTipo() + ", Color: " + accesorio4.getColor() + ", Precio: " + accesorio4.getPrecio() + ", ID: " + accesorio4.getIdProducto() + ", Género: " + accesorio4.getGenero());
-    }
-}
+        System.out.println("Suéter 1 - Nombre: " + sueter1.getNombre() + ", Tipo: " + sueter1.getTipo() + ", Color: " + sueter1.getColor() + ", Precio: " + sueter1.getPrecio() + ", ID: " + sueter1.getIdProducto() + ", Género: " + sueter1.getGenero());
+
+        System.out.println("Pantalón 3 - Nombre: " + pantalon3.getNombre() + ", Tipo: " + pantalon3.getTipo() + ", Color: " + pantalon3.getColor() + ", Precio: " + pantalon3.getPrecio() + ", ID: " + pantalon3.getIdProducto() + ", Género: " + pantalon3.getGenero());
+
+        System.out.println("Calzado 5 - Nombre: " + calzado5.getNombre() + ", Tipo: " + calzado5.getTipo() + ", Color: " + calzado5.getColor() + ", Precio: " + calzado5.getPrecio() + ", ID: " + calzado5.getIdProducto() + ", Género: " + calzado5.getGenero());
+
+        System.out.println("Vestido 2 - Nombre: " + vestido2.getNombre() + ", Tipo: " + vestido2.getTipo() + ", Color: " + vestido2.getColor() + ", Precio: " + vestido2.getPrecio() + ", ID: " + vestido2.getIdProducto() + ", Género: " + vestido2.getGenero());
+
+        System.out.println("Accesorio 4 - Nombre: " + accesorio4.getNombre() + ", Tipo: " + accesorio4.getTipo() + ", Color: " + accesorio4.getColor() + ", Precio: " + accesorio4.getPrecio() + ", ID: " + accesorio4.getIdProducto() + ", Género: " + accesorio4.getGenero());
+
+}}
 
