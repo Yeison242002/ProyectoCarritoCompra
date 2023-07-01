@@ -272,7 +272,7 @@ public class InicioVista1Controller implements Initializable {
       this.off.getScene().getWindow();
       stage.close();
         }
-    
+   
 
     @FXML
     private void clickUsu(ActionEvent event) {
