@@ -4,7 +4,7 @@ package modelo;
 
 public class Usuario {
     
-
+    private String contrasena;
     private String nombre;
     private long telefono;
     private String Gmail;
@@ -18,10 +18,18 @@ public class Usuario {
         siguiente = null;
       
     }
-
+    
     public void listaAcudientes() {
         lista = new Tarjeta[tam];
     }
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContraseña(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
 
     public String getNombre() {
         return nombre;
