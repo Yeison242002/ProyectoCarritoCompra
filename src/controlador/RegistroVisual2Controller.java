@@ -1,9 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package controlador;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import javafx.event.ActionEvent;
@@ -25,18 +22,20 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 import javafx.scene.Node;
 
+import modelo.Tarjeta;
+import modelo.Usuario;
+
 public class RegistroVisual2Controller implements Initializable {
-      private Vista1Controller  controllerVista1;
-    private Vista1Controller Vista1Controller ;
+    private Vista1Controller controllerVista1;
     private Stage stage;
+    private Tarjeta tarjeta;
+
     @FXML
     private TextField nomR;
     @FXML
     private TextField corrR;
     @FXML
     private TextField ciuR;
-    @FXML
-    private TextField paiR;
     @FXML
     private TextField telR;
     @FXML
@@ -45,46 +44,57 @@ public class RegistroVisual2Controller implements Initializable {
     private TextField contR;
     @FXML
     private TextField confR;
-    private Stage stagee;
     @FXML
     private Button canclR;
     @FXML
     private Button regsR;
+    @FXML
+    private TextField NumN;
+    @FXML
+    private TextField NumT;
+    @FXML
+    private TextField Fecha;
+    @FXML
+    private TextField cvv;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }
 
     public void init(Stage stage) {
-        this.stagee = stage;
+        this.stage = stage;
     }
-      public void init(Stage stage, Vista1Controller aThis) {
-        
-        this.controllerVista1 = Vista1Controller;
-        this.stagee = stage;
-        
+
+    public void init(Stage stage, Vista1Controller controllerVista1) {
+        this.controllerVista1 = controllerVista1;
+        this.stage = stage;
     }
 
     @FXML
     private void cancelarR(ActionEvent event) {
         // Cerrar la ventana actual
-        stagee.close();
+        stage.close();
     }
 
     @FXML
     private void registrarseR(ActionEvent event) {
         String nombre = nomR.getText();
         String ciudad = ciuR.getText();
-        String pais = paiR.getText();
         String telefono = telR.getText();
         String correo = corrR.getText();
         String direccion = diccR.getText();
         String contrasena = contR.getText();
         String confirmacionContrasena = confR.getText();
+        String nombrePropietario = NumN.getText();
+        String numeroTarjeta = NumT.getText();
+        String fechaExpedicion = Fecha.getText();
+        String Cvv = cvv.getText();
 
         // Validar que los campos no estén vacíos y que la contraseña y confirmación coincidan
-        if (nombre.isEmpty() || ciudad.isEmpty() || pais.isEmpty() || telefono.isEmpty() ||
-                correo.isEmpty() || direccion.isEmpty() || contrasena.isEmpty() || confirmacionContrasena.isEmpty()) {
+        if (nombre.isEmpty() || ciudad.isEmpty() || telefono.isEmpty() || correo.isEmpty() ||
+                direccion.isEmpty() || contrasena.isEmpty() || confirmacionContrasena.isEmpty() ||
+                nombrePropietario.isEmpty() || numeroTarjeta.isEmpty() || fechaExpedicion.isEmpty() ||
+                Cvv.isEmpty()) {
             mostrarMensajeError("Error", "Por favor, complete todos los campos.");
             return;
         }
@@ -108,56 +118,97 @@ public class RegistroVisual2Controller implements Initializable {
 
         // Validar el correo electrónico
         if (!validarCorreo(correo)) {
-            mostrarMensajeError("Error", "El correo electrónico debe tener la extensión @yxxs.com.");
+            mostrarMensajeError("Error", "El correo electrónico debe tener el formato correcto.");
             return;
         }
-       if (!validarDatosRepetidos(correo, telefono)) {
-        mostrarMensajeError("Error", "El correo o el teléfono ya están registrados.");
-        return;
-    }
 
+        // Validar el número de tarjeta
+        if (!validarNumeroTarjeta(numeroTarjeta)) {
+            mostrarMensajeError("Error", "El número de tarjeta debe tener 16 dígitos.");
+            return;
+        }
 
-        // Guardar los datos en un archivo
-        guardarDatosUsuario(nombre, ciudad, pais, telefono, correo, direccion, contrasena);
+        // Crear un objeto de tipo Usuario
+        Usuario nuevoUsuario = new Usuario(nombre, correo, telefono, direccion, ciudad,
+                contrasena, confirmacionContrasena);
 
-        // Limpiar los campos de texto
+        // Crear un objeto de tipo Tarjeta
+        tarjeta = new Tarjeta(nombrePropietario, numeroTarjeta, fechaExpedicion, Cvv);
+        nuevoUsuario.setTarjeta(tarjeta);
+
+        // Guardar el usuario en un archivo
+        guardarUsuarioEnArchivo(nuevoUsuario);
+
+        // Mostrar un mensaje de éxito
+        mostrarMensajeExito("Usuario registrado correctamente");
+
+        // Restablecer los campos de texto
         limpiarCampos();
 
         // Cerrar la ventana actual
-       abrirVentanaExistente("/vista/Vista1.fxml");
+      
+        
+        abrirVentanaExistente("/vista/Vista1.fxml");
        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
     stage.close();
     }
 
-    private void guardarDatosUsuario(String nombre, String ciudad, String pais, String telefono,
-                                     String correo, String direccion, String contrasena) {
-        try {
-            FileWriter fileWriter = new FileWriter("usuarios.txt", true);
-            fileWriter.write("Nombre: " + nombre + "\n");
-            fileWriter.write("Ciudad: " + ciudad + "\n");
-            fileWriter.write("País: " + pais + "\n");
-            fileWriter.write("Teléfono: " + telefono + "\n");
-            fileWriter.write("Correo: " + correo + "\n");
-            fileWriter.write("Dirección: " + direccion + "\n");
-            fileWriter.write("Contraseña: " + contrasena + "\n");
-            fileWriter.write("--------------------\n");
-            fileWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void guardarUsuarioEnArchivo(Usuario usuario) {
+        String nombreArchivo = "usuarios.txt";
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivo, true))) {
+        writer.write("Correo: " + usuario.getGmail() + "\n");
+        writer.write("Nombre: " + usuario.getNombre() + "\n");
+        writer.write("Teléfono: " + usuario.getTelefono() + "\n");
+        writer.write("Dirección: " + usuario.getDireccion() + "\n");
+        writer.write("Ciudad: " + usuario.getCiudad() + "\n");
+        writer.write("Contraseña: " + usuario.getContrasena() + "\n");
+        writer.write("Confirmar Contraseña: " + usuario.getConContrasena() + "\n");
+        writer.write("Nombre Propietario Tarjeta: " + usuario.getTarjeta().getNombreP() + "\n");
+        writer.write("Número Tarjeta: " + usuario.getTarjeta().getNumTarjeta() + "\n");
+        writer.write("Fecha Expedición: " + usuario.getTarjeta().getFechaExp() + "\n");
+        writer.write("CVV: " + usuario.getTarjeta().getCVV() + "\n");
+
+        writer.newLine(); // Agregar una nueva línea al final del archivo
+
+    } catch (IOException e) {
+        System.out.println("Error al guardar el usuario en el archivo: " + e.getMessage());
+    }
+}
+
+    private boolean validarContrasena(String contrasena) {
+        // Implementa aquí tu lógica de validación de la contraseña
+        // Puedes utilizar expresiones regulares o algoritmos de validación
+
+        // Ejemplo básico de validación: verificar que la contraseña tenga al menos 8 dígitos,
+        // una mayúscula y un símbolo
+        return contrasena.matches("^(?=.*[A-Z])(?=.*[!@#$%^&*(),.?\":{}|<>]).{8,}$");
     }
 
-    private void limpiarCampos() {
-        nomR.clear();
-        ciuR.clear();
-        paiR.clear();
-        telR.clear();
-        corrR.clear();
-        diccR.clear();
-        contR.clear();
-        confR.clear();
+    private boolean validarTelefono(String telefono) {
+        // Implementa aquí tu lógica de validación del número de teléfono
+        // Puedes utilizar algoritmos o librerías especializadas
+
+        // Ejemplo básico de validación: verificar que el teléfono tenga 10 dígitos
+        return telefono.matches("\\d{10}");
     }
-     private void abrirVentanaExistente(String rutaFXML) {
+
+    private boolean validarCorreo(String correo) {
+        // Implementa aquí tu lógica de validación del correo electrónico
+        // Puedes utilizar expresiones regulares o algoritmos de validación
+
+        // Ejemplo básico de validación: verificar que el correo tenga el formato correcto
+        return correo.matches("[\\w.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}");
+    }
+
+    private boolean validarNumeroTarjeta(String numeroTarjeta) {
+        // Implementa aquí tu lógica de validación del número de tarjeta
+        // Puedes utilizar algoritmos o librerías especializadas
+
+        // Ejemplo básico de validación: verificar que el número de tarjeta tenga 16 dígitos
+        return numeroTarjeta.matches("\\d{16}");
+    }
+    private void abrirVentanaExistente(String rutaFXML) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(rutaFXML));
             Parent root = fxmlLoader.load();
@@ -180,42 +231,27 @@ public class RegistroVisual2Controller implements Initializable {
         alert.showAndWait();
     }
 
-    private boolean validarContrasena(String contrasena) {
-        // Validar que la contraseña tenga al menos 8 dígitos, una mayúscula y un símbolo
-        return contrasena.matches("^(?=.*[A-Z])(?=.*[!@#$%^&*(),.?\":{}|<>]).{8,}$");
+    private void mostrarMensajeExito(String mensaje) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Éxito");
+        alert.setHeaderText(null);
+        alert.setContentText(mensaje);
+        alert.showAndWait();
     }
 
-    private boolean validarTelefono(String telefono) {
-        // Validar que el teléfono tenga 10 dígitos
-        return telefono.matches("\\d{10}");
+    private void limpiarCampos() {
+        nomR.clear();
+        corrR.clear();
+        ciuR.clear();
+        telR.clear();
+        diccR.clear();
+        contR.clear();
+        confR.clear();
+        NumN.clear();
+        NumT.clear();
+        Fecha.clear();
+        cvv.clear();
     }
-
-    private boolean validarCorreo(String correo) {
-        // Validar que el correo tenga la extensión @yxxs.com
-        return correo.endsWith("@yxxs.com");
-    }
-    private boolean validarDatosRepetidos(String correo, String telefono) {
-    try {
-        File file = new File("usuarios.txt");
-        Scanner scanner = new Scanner(file);
-
-        while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
-            if (line.contains("Correo: " + correo) || line.contains("Teléfono: " + telefono)) {
-                scanner.close();
-                return false;
-            }
-        }
-
-        scanner.close();
-    } catch (FileNotFoundException e) {
-        e.printStackTrace();
-    }
-
-    return true;
-}
-
-
 
     @FXML
     private void nombreR(ActionEvent event) {
@@ -224,7 +260,6 @@ public class RegistroVisual2Controller implements Initializable {
     @FXML
     private void telefonoR(ActionEvent event) {
     }
-    
 
     @FXML
     private void direccionR(ActionEvent event) {
@@ -245,5 +280,20 @@ public class RegistroVisual2Controller implements Initializable {
     @FXML
     private void correoR(ActionEvent event) {
     }
-  
+
+    @FXML
+    private void clickN(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickT(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickF(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickC(ActionEvent event) {
+    }
 }

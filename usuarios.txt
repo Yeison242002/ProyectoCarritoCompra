@@ -15,3 +15,51 @@ Correo: usu@yxxs.com
 Dirección: fghfh
 Contraseña: 1234567M?
 --------------------
+Correo: example@example.com
+Nombre: vnx
+Teléfono: 1234567890
+Dirección: jcsjd
+Ciudad: d cz
+Contraseña: 1234567M?
+Confirmar Contraseña: 1234567M?
+Nombre Propietario Tarjeta: 1234567891234567
+Número Tarjeta:  dsj 
+Fecha Expedición: ksnd
+CVV: sdcj
+
+Correo: example@example.com
+Nombre: ncsbcsc
+Teléfono: 1234567890
+Dirección: jsdcsa 
+Ciudad: dscjdn
+Contraseña: 12345678M?
+Confirmar Contraseña: 12345678M?
+Nombre Propietario Tarjeta: 1234567890123456
+Número Tarjeta: ebwfb
+Fecha Expedición: bbdehw
+CVV: djdd
+
+Correo: ehddh@example.com
+Nombre: jwbdh
+Teléfono: 1234567890
+Dirección: sjdbc
+Ciudad: esbcb
+Contraseña: 12345678M?
+Confirmar Contraseña: 12345678M?
+Nombre Propietario Tarjeta: 1234567890123456
+Número Tarjeta: awdhw
+Fecha Expedición: wqbd
+CVV: advwvd
+
+Correo: sdknss@eeee.com
+Nombre: yeisonjsj
+Teléfono: 1234567890
+Dirección: ndkws
+Ciudad: wdbjewb
+Contraseña: 1234567M?
+Confirmar Contraseña: 1234567M?
+Nombre Propietario Tarjeta: 1234567890123456
+Número Tarjeta: qw wj 
+Fecha Expedición: scbb
+CVV: ewhdi
+

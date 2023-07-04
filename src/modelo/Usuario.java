@@ -2,22 +2,35 @@
 package modelo;
 
 
-public class Usuario {
+public class Usuario extends Tarjeta{
     
     private String contrasena;
+    private String conContrasena;
     private String nombre;
-    private long telefono;
+    private String telefono;
     private String Gmail;
     private String direccion;
     private String ciudad;
     private Tarjeta lista[];
     private int tam;
     private Usuario siguiente;
+    private Tarjeta tarjeta;
 
     public Usuario() {
         siguiente = null;
       
     }
+    public Usuario(String nombre, String Gmail, String telefono, String direccion, String ciudad, String contrasena, String conContrasena) {
+        this.nombre = nombre;
+        this.Gmail = Gmail;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.ciudad = ciudad;
+        this.contrasena = contrasena;
+        this.conContrasena = conContrasena;
+    }
+
+   
     
     public void listaAcudientes() {
         lista = new Tarjeta[tam];
@@ -29,6 +42,13 @@ public class Usuario {
     public void setContraseña(String contrasena) {
         this.contrasena = contrasena;
     }
+    public String getConContrasena() {
+        return conContrasena;
+    }
+
+    public void setConContraseña(String conContrasena) {
+        this.conContrasena = conContrasena;
+    }
 
 
     public String getNombre() {
@@ -39,11 +59,11 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public long  getTelefono() {
+    public String  getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(long telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
@@ -93,5 +113,12 @@ public class Usuario {
 
     public void setTam(int tam) {
         this.tam = tam;
+    }
+     public Tarjeta getTarjeta() {
+        return tarjeta;
+    }
+
+    public void setTarjeta(Tarjeta tarjeta) {
+        this.tarjeta = tarjeta;
     }
 }

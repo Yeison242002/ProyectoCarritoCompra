@@ -5,50 +5,55 @@ import java.time.YearMonth;
 
 public class Tarjeta {
    
-    private long numeroTarjeta;
-    private String nombrePropietario;
-    private YearMonth fechaExpedicion;
-    private int CVV;
+    public String numeroTarjeta;
+    public String nombrePropietario;
+    public String fechaExpedicion;
+    public String CVV;
     
-    public Tarjeta(long numeroTarjeta, String nombrePropietario, YearMonth fechaExpedicion, int Cvv) {
+    public Tarjeta(String numeroTarjeta, String nombrePropietario, String fechaExpedicion, String Cvv) {
         this.nombrePropietario = nombrePropietario;
         this.numeroTarjeta = numeroTarjeta;
         this.fechaExpedicion = fechaExpedicion;
-        this.CVV = CVV;
+        this.CVV = Cvv;
     }
+    
+
 
     public Tarjeta() {
     }
+
+    
 
     public String getNombreP() {
         return nombrePropietario;
     }
 
     public void setNombreP(String nombreP) {
-        this.nombrePropietario = nombrePropietario;
+        this.nombrePropietario = nombreP;
     }
 
-    public long getNumTarjeta() {
+    public String getNumTarjeta() {
         return numeroTarjeta;
     }
 
-    public void setNumTarjeta(long numTarjeta) {
+    public void setNumTarjeta(String numTarjeta) {
         this.numeroTarjeta = numTarjeta;
     }
-     public YearMonth getFechaExp() {
+     public String getFechaExp() {
         return fechaExpedicion;
     }
 
-    public void setFechaExp(YearMonth fecExpedicion) {
+    public void setFechaExp(String fecExpedicion) {
         this.fechaExpedicion = fecExpedicion;
     }
 
-    public long getCVV() {
+    public String getCVV() {
         return CVV;
     }
 
-    public void setId(int CVV) {
-        this.CVV = CVV;
+    public void setCVV(String Cvv) {
+        this.CVV = Cvv;
+        
     }
 
 }

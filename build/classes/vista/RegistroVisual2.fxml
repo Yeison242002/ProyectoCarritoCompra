@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RegistroVisual2Controller">
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RegistroVisual2Controller">
    <children>
       <Label layoutX="182.0" layoutY="6.0" text="LOGO">
          <font>
@@ -17,19 +17,27 @@
       <Label layoutX="82.0" layoutY="123.0" text="Nombre:" />
       <Label layoutX="82.0" layoutY="177.0" text="Telefono:" />
       <Label layoutX="82.0" layoutY="228.0" text="Direccion:" />
-      <Label layoutX="273.0" layoutY="228.0" text="Ciudad/pais:" />
+      <Label layoutX="273.0" layoutY="228.0" text="Ciudad:" />
       <Label layoutX="82.0" layoutY="280.0" text="Contraseña:" />
       <Label layoutX="82.0" layoutY="338.0" text="Confirmar Contraseña:" />
-      <Button fx:id="canclR" layoutX="145.0" layoutY="408.0" mnemonicParsing="false" onAction="#cancelarR" text="CANCELAR" />
-      <Button fx:id="regsR" layoutX="280.0" layoutY="408.0" mnemonicParsing="false" onAction="#registrarseR" text="REGISTRARSE" />
+      <Button fx:id="canclR" layoutX="256.0" layoutY="408.0" mnemonicParsing="false" onAction="#cancelarR" text="CANCELAR" />
+      <Button fx:id="regsR" layoutX="452.0" layoutY="408.0" mnemonicParsing="false" onAction="#registrarseR" text="REGISTRARSE" />
       <TextField fx:id="nomR" layoutX="82.0" layoutY="141.0" onAction="#nombreR" prefHeight="25.0" prefWidth="214.0" />
       <TextField fx:id="telR" layoutX="82.0" layoutY="194.0" onAction="#telefonoR" prefHeight="25.0" prefWidth="146.0" />
       <TextField fx:id="diccR" layoutX="82.0" layoutY="244.0" onAction="#direccionR" prefHeight="25.0" prefWidth="136.0" />
       <TextField fx:id="ciuR" layoutX="273.0" layoutY="244.0" onAction="#ciudadR" prefHeight="25.0" prefWidth="136.0" />
       <TextField fx:id="contR" layoutX="82.0" layoutY="296.0" onAction="#contrasenaR" prefHeight="25.0" prefWidth="214.0" />
       <TextField fx:id="confR" layoutX="82.0" layoutY="355.0" onAction="#confContraseñaR" prefHeight="25.0" prefWidth="214.0" />
-      <TextField fx:id="paiR" layoutX="273.0" layoutY="268.0" onAction="#ciudadR" prefHeight="25.0" prefWidth="136.0" />
       <TextField fx:id="corrR" layoutX="245.0" layoutY="194.0" onAction="#correoR" prefHeight="25.0" prefWidth="207.0" />
       <Label layoutX="249.0" layoutY="177.0" text="Gmail:" />
+      <Label layoutX="464.0" layoutY="86.0" text="REGISTRAR TARJETA " />
+      <Label layoutX="465.0" layoutY="119.0" text="NUMERO DEL PROPIETARIO" />
+      <Label layoutX="465.0" layoutY="191.0" text="NUMERO DE LA TARJETA" />
+      <Label layoutX="464.0" layoutY="263.0" text="FECHA DE VENCIMIENTO" />
+      <Label layoutX="465.0" layoutY="322.0" text="CVV" />
+      <TextField fx:id="NumN" layoutX="465.0" layoutY="148.0" onAction="#clickN" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="NumT" layoutX="465.0" layoutY="217.0" onAction="#clickT" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="Fecha" layoutX="465.0" layoutY="287.0" onAction="#clickF" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="cvv" layoutX="465.0" layoutY="346.0" onAction="#clickC" />
    </children>
 </AnchorPane>

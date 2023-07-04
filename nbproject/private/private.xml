@@ -4,22 +4,19 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/PerfilVisual4.fxml</file>
+            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/ElementoCarrito.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/controlador/EditarPerfilController.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/controlador/PrincipalVisual3Controller.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/styles.css.txt</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/carrito%20shop.png</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/camisetas.fxml</file>
-            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Sueteres.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Main.java</file>
-            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Promocion.java</file>
-            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Descuentos.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/calzado%201(1).jpg</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/controlador/InformacionController.java</file>
+            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Productos.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/Vista1.fxml</file>
-            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Vestidos.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/controlador/Vista1Controller.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/controlador/PerfilVisual4Controller.java</file>
-            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Pantalones.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Tarjeta.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/editarPerfil.fxml</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/controlador/CamisetasController.java</file>
@@ -27,18 +24,18 @@
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/calzado%20mujer%201(1).jpg</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/controlador/RegistroVisual2Controller.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/calzado%20mujer%202(1).jpg</file>
-            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Calzado.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/controlador/InicioVista1Controller.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/Informacion.fxml</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/RegistroVisual2.fxml</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/accesorio%201(1).jpg</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/a4.jpg</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/camiseta%203.jpg</file>
+            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Usuario.java</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/icons8-gafas-64.png</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/a3_1.jpg</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/InicioVista1.fxml</file>
             <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/vista/imagenes/yxxs%20(5).png</file>
-            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/modelo/Accesorios.java</file>
+            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/ProyectoCarritoCompra/src/controlador/CarritoComprasController.java</file>
         </group>
     </open-files>
 </project-private>
